@@ -1,2 +1,10 @@
+![Banner](Banner.png)
 # pdf-numeric-password-cracker
-Use only on files you own or have permission for. I am  not responsible for misuse.
+
+⚠️ Disclaimer
+
+This project is intended strictly for educational purposes and personal document recovery.
+
+Use this tool only on PDF files that you own or have explicit permission to access.
+
+I am not responsible for any misuse of this software.

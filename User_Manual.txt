@@ -1,0 +1,203 @@
+PDF NUMERIC PASSWORD TESTER – USER MANUAL
+Version: 1.0
+Author: Lingesh
+
+IMPORTANT:
+This tool is for EDUCATIONAL PURPOSES and PERSONAL PDF RECOVERY ONLY.
+Use it only on PDF files you own or have legal permission to access.
+
+--------------------------------------------------
+1. INTRODUCTION
+--------------------------------------------------
+
+PDF Numeric Password Tester is a Python-based program that attempts numeric-only
+passwords on locked PDF files using PikePDF.
+
+Features:
+- GUI PDF file picker
+- User-defined digit length
+- Resume from last checkpoint
+- Live speed and time remaining
+- Automatic progress saving
+- Password export on success
+
+--------------------------------------------------
+2. SYSTEM REQUIREMENTS
+--------------------------------------------------
+
+- Windows 10 / 11
+- Python 3.8 or newer
+- Internet connection (only for installing PikePDF)
+
+--------------------------------------------------
+3. INSTALLATION
+--------------------------------------------------
+
+STEP 1 – INSTALL PYTHON
+
+Download Python from:
+https://www.python.org/downloads/
+
+During installation make sure:
+
+[✓] Add Python to PATH
+
+--------------------------------------------------
+
+STEP 2 – INSTALL PIKEPDF
+
+Open Command Prompt and type:
+
+pip install pikepdf
+
+--------------------------------------------------
+4. PROJECT FOLDER STRUCTURE
+--------------------------------------------------
+
+Your project folder should look like this:
+
+pdf-numeric-password-tester/
+|
+|-- main.py
+|-- USER_MANUAL.txt
+|-- README.md
+|-- LICENSE
+|
+|-- screenshots/
+|
+|-- resume_checkpoint.txt (auto created)
+
+--------------------------------------------------
+5. RUNNING THE PROGRAM
+--------------------------------------------------
+
+1. Open Command Prompt inside the project folder.
+
+2. Run:
+
+python main.py
+
+--------------------------------------------------
+6. USING THE PROGRAM
+--------------------------------------------------
+
+6.1 SELECT PDF
+
+A file dialog will open.
+Select your locked PDF file.
+
+--------------------------------------------------
+
+6.2 ENTER DIGIT COUNT
+
+Example:
+
+How many digits (e.g., 11 or 12): 6
+
+This means passwords from:
+
+000000 to 999999
+
+--------------------------------------------------
+
+6.3 ENTER START NUMBER
+
+For first run:
+
+0
+
+For resume:
+
+Open resume_checkpoint.txt
+Copy the number
+Paste when asked.
+
+--------------------------------------------------
+7. LIVE OUTPUT
+--------------------------------------------------
+
+Example:
+
+Guessing: 000123 | Speed: 850/sec | Time Left: 02:15:40
+
+Meaning:
+
+Guessing      → Current password
+Speed         → Attempts per second
+Time Left     → Estimated remaining time
+
+--------------------------------------------------
+8. PAUSE AND RESUME
+--------------------------------------------------
+
+Press:
+
+CTRL + C
+
+Progress automatically saves to:
+
+resume_checkpoint.txt
+
+To resume:
+
+1. Run program again
+2. Enter saved number
+
+--------------------------------------------------
+9. PASSWORD FOUND
+--------------------------------------------------
+
+When successful:
+
+found_password.txt is created.
+
+It contains:
+
+Password: XXXXX
+
+--------------------------------------------------
+10. IMPORTANT NOTES
+--------------------------------------------------
+
+- Only numeric passwords supported
+- High digit counts take VERY long
+- CPU speed affects performance
+- Resume works anytime
+- Progress saves safely on exit
+
+--------------------------------------------------
+11. TROUBLESHOOTING
+--------------------------------------------------
+
+Python not recognized:
+
+Reinstall Python and check:
+Add Python to PATH
+
+--------------------------------------------------
+
+Module not found:
+
+Run:
+
+pip install pikepdf
+
+--------------------------------------------------
+12. LEGAL DISCLAIMER
+--------------------------------------------------
+
+This software is provided for educational and personal recovery use only.
+
+Do NOT use on PDFs you do not own or have permission to access.
+
+Author assumes no responsibility for misuse.
+
+--------------------------------------------------
+13. SUPPORT
+--------------------------------------------------
+
+For bugs or improvements, open a GitHub issue.
+
+--------------------------------------------------
+
+END OF MANUAL

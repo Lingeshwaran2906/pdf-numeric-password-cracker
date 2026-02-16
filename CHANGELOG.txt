@@ -1,0 +1,6 @@
+Version 1.0 – Initial Release
+- Numeric PDF password testing
+- Resume checkpoint support
+- Live progress display
+- GUI PDF picker
+- Password export
